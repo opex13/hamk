@@ -1,4 +1,7 @@
 # hamk
 Hamkin harjoitustehtäviä
 
-tehtävä 1
+Ohjelmointi perusteet - harjoitukset
+Osio 1
+    tehtävä 1
+    tehtävä 2
