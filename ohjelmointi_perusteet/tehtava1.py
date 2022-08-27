@@ -1,3 +1,4 @@
+#ohjelmointi perusteet tehtävä 1
 print("Moi! Annapas kaksi lukua")
 NumeroA = int(input("Ensimmäinen luku:"))
 NumeroB = int(input("Toinen luku:"))
