@@ -1,0 +1,2 @@
+# hamk
+Hamkin harjoitustehtäviä
