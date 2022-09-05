@@ -12,16 +12,18 @@ print(jakoOperator)
 kertoOperator = "D. kertolasku"
 print(kertoOperator)
 operaatio = input("Anna operaatio:")
-if operaatio.upper == "A" or "PLUS" or "+":
+print(operaatio)
+print(operaatio.upper())
+if operaatio.upper == "A" or operaatio.upper() == "PLUS" or operaatio == "+":
     print("Valitsit", plusOperator)
     print(numeroA, "+", numeroB, "=", numeroA+numeroB)
-elif operaatio.upper == "B" or "MIINUS" or "-":
+elif operaatio.upper() == "B" or operaatio.upper() == "MIINUS" or operaatio == "-":
     print("Valitsit", miinusOperator)
     print(numeroA, "-", numeroB, "=", numeroA-numeroB)
-elif operaatio.upper == "C" or "/" or ":" or "JAKO":
+elif operaatio.upper() == "C" or operaatio == "/" or operaatio == ":" or operaatio.upper() == "JAKO":
     print("Valitsit", jakoOperator)
     print(numeroA, "/", numeroB, "=", numeroA/numeroB)
-elif operaatio.upper == "D" or "*" or "KERTO":
+elif operaatio.upper() == "D" or operaatio == "*" or operaatio.upper() == "KERTO":
     print("Valitsit", kertoOperator)
     print(numeroA, "*", numeroB, "=", numeroA*numeroB)
 else:
