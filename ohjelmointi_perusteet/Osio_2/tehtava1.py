@@ -4,7 +4,7 @@ numeroA = input("Tässä tulee eka numero")
 numeroB = input("Tässä tulee toka numero")
 #print(numeroA.isnumeric())
 #tarkistetaan että molemmat syötteet ovat numerisia:
-if numeroA.isnumeric() != True and numeroB.isnumeric() != True:
+if numeroA.isnumeric() != True or numeroB.isnumeric() != True:
     print("Osan tehdä laskut vain numeroilla, sorry!")
     exit()
 else:
@@ -20,6 +20,8 @@ else:
     operaatio = input("Anna operaatio:")
     #print(operaatio) #debug
     #print(operaatio.upper()) #debug
+    numeroA = int(numeroA)
+    numeroB = int(numeroB)
     if operaatio.upper == "A" or operaatio.upper() == "PLUS" or operaatio == "+":
         print("Valitsit", plusOperator)
         print(numeroA, "+", numeroB, "=", numeroA+numeroB)
