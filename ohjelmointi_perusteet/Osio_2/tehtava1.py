@@ -6,7 +6,6 @@ numeroB = input("Tässä tulee toka numero")
 #tarkistetaan että molemmat syötteet ovat numerisia:
 if numeroA.isnumeric() != True or numeroB.isnumeric() != True:
     print("Osan tehdä laskut vain numeroilla, sorry!")
-    exit()
 else:
     print("No mitä teemme näillä?")
     plusOperator = "A. plus"
