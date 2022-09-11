@@ -1,0 +1,4 @@
+{
+    "extensions.supportVirtualWorkspaces": { "<ms-python.vscode-pylance>": true }
+    "extensions.supportVirtualWorkspaces": { "<ms-python.python>": true }
+}
