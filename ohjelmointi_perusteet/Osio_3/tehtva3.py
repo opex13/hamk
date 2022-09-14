@@ -5,16 +5,16 @@ generoituLista = []
 rivit = 0
 def tuplatPois(x):
     return list(dict.fromkeys(x))
-while seitsemanOikea != generoituLista:
+while seitsemanOikea not in generoituLista:
 #for rivit in range(10000):
     generoituLista.clear()
-    while len(generoituLista) in range(7):
-        lottonumero = randrange(1,40)
+    for x in range(7):
+        lottonumero = randrange(1,41)
         generoituLista.append(lottonumero)
         generoituLista.sort()
         generoituLista = tuplatPois(generoituLista)
         #print(generoituLista)
-    #print(generoituLista)
+    print(generoituLista)
     print(rivit)
     #print(lottonumero)
     rivit += 1
