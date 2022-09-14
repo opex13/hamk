@@ -19,6 +19,5 @@ while seitsemanOikea not in generoituLista:
     #print(lottonumero)
     rivit += 1
 print(generoituLista)
-print(lottonumero)
-print(rivit)
-set(generoituLista)
+#print(lottonumero)
+print(rivit, "näin monta viikoa pitäisi lototta")
