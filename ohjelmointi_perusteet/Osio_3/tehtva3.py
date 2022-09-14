@@ -14,7 +14,7 @@ while seitsemanOikea not in generoituLista:
         generoituLista.sort()
         generoituLista = tuplatPois(generoituLista)
         #print(generoituLista)
-    print(generoituLista)
+    #print(generoituLista)
     print(rivit)
     #print(lottonumero)
     rivit += 1
