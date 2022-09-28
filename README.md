@@ -16,3 +16,6 @@
 # Osio 4
     - tehtävä 1
     - tehtävä 2
+# Osio 5
+    - tehtävä 1
+    - tili.py moduuli
