@@ -34,14 +34,14 @@ class player:
         return(earnedMoney, spendEnergy)
         self.stats
         
-    def spendMoney(self, x): #ostaminen
+    def spendMoney(self, x): #ostaminen, v1:ssa käytämätön
         if(x > self.money):
             print("ei ole rahaa ostoksille")
         else: 
             self.money -= x
             print("Teit ostoksen", x, "summalla, tililläsi", self.money, "rahaa")
             
-    def spendEnergy(self, x): #energian käyttö
+    def spendEnergy(self, x): #energian käyttö, v1:ssa käytämätön
         if(x > self.energy):
             print("ei ole riitävästi energiaa")
         else: 
