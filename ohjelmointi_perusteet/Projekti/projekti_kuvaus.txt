@@ -1,0 +1,10 @@
+Tässä on tekstipeli, inspiraationa on vanhan amiga commodore 64 ajan "Jones in fast lane" peli(https://jonesinthefastlane.com/)
+
+Ensimmäinen versio on suunniteltu kahelle pelaajille.
+Ensiksi pelaajat antavat omat nimet ja määrittävät kuinka paljon rahaa pitää kerätä voittamiseen
+Pelikierroksen toimitoja ovat työn teko, joka vähentää hahmon energiaa, mutta saa ansiotuloa; lepääminen, joka täydentää energiaa; ja lottominen, joka voi 5% todennäköisyydellä tuotta 1-100 kpl rahaa.
+Ensimmäinen voittosumman keräjä on voittaja.
+
+
+github linkki:
+https://github.com/opex13/hamk/tree/main/ohjelmointi_perusteet/Projekti
