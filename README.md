@@ -19,3 +19,5 @@
 # Osio 5
     - tehtävä 1
     - tili.py moduuli
+# Python projekti
+    - Ohjelmistoprojektin aihe on vapaavalintainen, mutta siinä tulee olla käytettynä ehtoja, silmukoita, funktioita ja luokkia.
