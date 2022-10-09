@@ -1,7 +1,5 @@
 # tässä tiedostossa ovat pelin käyttämät luokkaat
-from calendar import week
 from random import randint
-from tkinter import W
 
 
 class player:
