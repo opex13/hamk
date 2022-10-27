@@ -1,0 +1,14 @@
+body {
+    background-color:whitesmoke;    
+  }
+table {
+    border: solid 2px;
+    border-radius: 4%;
+}
+th{
+    border-bottom: solid 1px ;
+}
+tr, td{
+    border-bottom: solid 2px gray;
+    border-left: solid 1px lightgray;
+}
