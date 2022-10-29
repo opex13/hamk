@@ -1,0 +1,40 @@
+.mainbox{
+    width: 90%;
+    height: 1000px;
+    margin: 100px auto;
+    border-style: double;
+    border-color: lightblue;
+    box-sizing:border-box
+    
+}
+.logo{
+    margin:auto;
+    width: 100px;
+    position: relative;  
+    top: -70px;
+    box-sizing: border-box;
+}
+.header{
+    width: 90%;
+    margin: auto;
+    text-align: center;
+}
+.leftpart{
+    float: left;
+    width: 49%;
+}
+.kone{
+    position: relative;
+    float: left;
+    }
+.rightpart{
+    float: left;
+    width: 49%;
+    border-left: solid;
+}
+.rightLeftList{
+    float: left;
+}
+.rightRightList{
+    float: left;
+}
