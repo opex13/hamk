@@ -1,0 +1,14 @@
+body {
+    margin: auto;
+    width: 1000px;
+    background-color:lightsteelblue;
+    font-family: 'Comfortaa', cursive;
+}
+h1{
+    color: darkslateblue;
+    margin-top: 35px;
+    font-family: 'Staatliches', cursive;
+}
+ul, ol{
+    background-color: lightslategrey;
+}
