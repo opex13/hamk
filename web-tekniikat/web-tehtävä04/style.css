@@ -1,15 +1,20 @@
+body{
+    height:fit-content;
+}
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
 .mainbox{
     width: 90%;
-    height: 1000px;
+    height:auto;
     margin: 100px auto;
     border-style: double;
     border-color: lightblue;
-    box-sizing:border-box
-    
 }
 .logo{
     margin:auto;
-    width: 100px;
+    width: 238px;
     position: relative;  
     top: -70px;
     box-sizing: border-box;
@@ -19,9 +24,19 @@
     margin: auto;
     text-align: center;
 }
+.newbody{
+    box-sizing: border-box;
+    clear: both;
+    height:max-content;
+    position: relative;
+    display: inline-block;
+}
 .leftpart{
+    clear: both;
     float: left;
     width: 49%;
+    position: relative;
+    border-right: solid 2px;
 }
 .kone{
     position: relative;
@@ -30,7 +45,7 @@
 .rightpart{
     float: left;
     width: 49%;
-    border-left: solid;
+    
 }
 .rightLeftList{
     float: left;
