@@ -3,7 +3,10 @@
     --fire-opal: #de5746ff;
     --light-orange: rgb(240, 223, 206);
     --light-orange-card: rgb(251, 249, 247);
+    --navbar-gradient: var(--fire-opal), rgba(255, 255, 255, 0);
+    --navbar-gradient-down: var(--fire-opal), rgba(255, 255, 255, 0)
     font-family: 'Montserrat', sans-serif;
+
 
 }
 .material-symbols-outlined {
@@ -11,14 +14,15 @@
   'FILL' 0,
   'wght' 400,
   'GRAD' 0,
-  'opsz' 48
-}
+  'opsz' 48;
+  }
 /*tietokoneet*/
 @media only screen and (min-width: 600px){
     .navbar{
         width: 5rem;
         height: 100vh;
         position: fixed;
+        background-image: linear-gradient(to right, var(--navbar-gradient));
         }
     .navbar-bar{
         display: flex;
@@ -35,6 +39,19 @@
     header{
         margin-left: 5rem;
     }
+    .navitem{
+        padding: 10%;
+    }
+    .navbar:hover{
+        width: 10rem;
+        background-image: linear-gradient(to right, var(--fire-opal),var(--fire-opal),var(--light-orange),rgba(255,255,255,0));
+    }
+    article img{
+        width: 20vw;
+    }
+    h1{
+        margin-top: 0;
+    }
 }
 
 /*kännykät*/
@@ -43,18 +60,30 @@
         height: 4rem;
         width: 100vw;
         top: 0;
+        position: fixed;
+        background-image: linear-gradient(var(--navbar-gradient));
         }
     .navbar-bar{
         display: flex;
         flex-direction: row;
-        align-items: center;
-        height: 100%
+        align-items: left;
+        height: 100%;
+        position: absolute top
     }
     .navitem{
-        justify-content: center;
+        justify-content: left;
     }
-    
+    .navitem{
+        padding: 5%;
+    }
+    article img{
+        width: 100%;
+    }
+    h1{
+        margin-top: 5rem;
+    }
 }
+/*yhteis CSS*/
 body{
     background: url("img/background.png") var(--light-orange) no-repeat fixed left;
     position: absolute;
@@ -66,17 +95,12 @@ body{
 }
 
 h1{
-    margin-top: 0;
     text-shadow: 0px 0px 20px var(--light-orange), 0px 0px 20px var(--light-orange), 0px 0px 20px var(--light-orange);
 }
 .navbar{
-    background-image: linear-gradient(to right, var(--fire-opal),rgba(255, 255, 255, 0));
     transition: width 200ms ease;
 }
-.navbar:hover{
-    width: 10rem;
-    background-image: linear-gradient(to right, var(--fire-opal),var(--fire-opal),var(--light-orange),rgba(255,255,255,0));
-}
+
 .navbar-bar{
     list-style-type: none;
     padding: 0;
@@ -92,9 +116,7 @@ h1{
     align-items: center;
     flex-direction: column;
 }
-.navitem{
-    padding: 10%;
-}
+
 
 .icontext{
     margin-top: 20%;
@@ -118,7 +140,6 @@ section{
 }
 article img{
     float: left;
-    width: 20vw;
     border-radius: 5px;
 }
 @keyframes animatedBackground {
