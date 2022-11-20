@@ -1,11 +1,104 @@
-body{
-    background-image: linear-gradient(135deg, rgba(179, 93, 46, 0.695), rgba(177, 89, 76, 0.678), rgba(81, 75, 40, 0.695));
-   
-}
-header{
+:root{
+    --dark-sienna: #2a0200ff;
+    --fire-opal: #de5746ff;
+    --light-orange: rgb(240, 223, 206);
+    --light-orange-card: rgb(251, 249, 247);
     font-family: 'Montserrat', sans-serif;
+
+}
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+/*tietokoneet*/
+@media only screen and (min-width: 600px){
+    .navbar{
+        width: 5rem;
+        height: 100vh;
+        position: fixed;
+        }
+    .navbar-bar{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100%
+    }
+    .navitem:last-child {
+        margin-top: auto;
+    }
+    section{
+        margin-left: 5rem;
+    }
+    header{
+        margin-left: 5rem;
+    }
 }
 
+/*kännykät*/
+@media only screen and (max-width: 599px){
+    .navbar{
+        height: 4rem;
+        width: 100vw;
+        top: 0;
+        }
+    .navbar-bar{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        height: 100%
+    }
+    .navitem{
+        justify-content: center;
+    }
+    
+}
+body{
+    background: url("img/background.png") var(--light-orange) no-repeat fixed left;
+    position: absolute;
+    animation: animatedBackground 10s linear infinite alternate;
+    z-index: -2;
+    margin: 0;
+    padding: 0; 
+
+}
+
+h1{
+    margin-top: 0;
+    text-shadow: 0px 0px 20px var(--light-orange), 0px 0px 20px var(--light-orange), 0px 0px 20px var(--light-orange);
+}
+.navbar{
+    background-image: linear-gradient(to right, var(--fire-opal),rgba(255, 255, 255, 0));
+    transition: width 200ms ease;
+}
+.navbar:hover{
+    width: 10rem;
+    background-image: linear-gradient(to right, var(--fire-opal),var(--fire-opal),var(--light-orange),rgba(255,255,255,0));
+}
+.navbar-bar{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    /*flex-direction: column;*/
+    align-items: center;
+    height: 100%
+}
+.navlink{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.navitem{
+    padding: 10%;
+}
+
+.icontext{
+    margin-top: 20%;
+}
 section{
     font-family: 'Montserrat', sans-serif;
     display: flex;
@@ -13,21 +106,29 @@ section{
     justify-content: space-around;
     align-content: space-around;
     gap: 10px 10px;
+    
 }
 .card{
-    border: solid, 5px, #2a0200;
+    border: solid, 5px, ;
     border-radius: 5px;
     width: 31%;
-    min-width: 500px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+    min-width: 400px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: var(--light-orange-card);
 }
 article img{
     float: left;
     width: 20vw;
     border-radius: 5px;
 }
-
-
+@keyframes animatedBackground {
+    from {
+      background-position: 0 0;
+    }
+    to {
+      background-position: 100% 0;
+    }
+}
 
 /*#region värit
 /* CSS HEX
