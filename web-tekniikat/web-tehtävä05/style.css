@@ -4,7 +4,7 @@
     --light-orange: rgb(240, 223, 206);
     --light-orange-card: rgb(251, 249, 247);
     --navbar-gradient: var(--fire-opal), rgba(255, 255, 255, 0);
-    --navbar-gradient-down: var(--fire-opal), rgba(255, 255, 255, 0)
+    --navbar-gradient-down: var(--fire-opal), rgba(255, 255, 255, 0);
     font-family: 'Montserrat', sans-serif;
 
 
@@ -66,9 +66,10 @@
     .navbar-bar{
         display: flex;
         flex-direction: row;
-        align-items: left;
+        align-items:stretch;
         height: 100%;
-        position: absolute top
+        position: absolute;
+        top: auto;
     }
     .navitem{
         justify-content: left;
@@ -87,7 +88,7 @@
 body{
     background: url("img/background.png") var(--light-orange) no-repeat fixed left;
     position: absolute;
-    animation: animatedBackground 10s linear infinite alternate;
+    animation: animatedBackground 120s linear infinite alternate;
     z-index: -2;
     margin: 0;
     padding: 0; 
@@ -131,7 +132,7 @@ section{
     
 }
 .card{
-    border: solid, 5px, ;
+    /*border: solid 1px;*/
     border-radius: 5px;
     width: 31%;
     min-width: 400px;
@@ -141,6 +142,8 @@ section{
 article img{
     float: left;
     border-radius: 5px;
+    margin-right: 2%;
+    margin-bottom: 2%;
 }
 @keyframes animatedBackground {
     from {
