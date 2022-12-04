@@ -1,0 +1,65 @@
+:root{
+    /*global variables*/
+}
+
+body{
+    margin: 0px;
+}
+
+.navbar{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+.menu-item{
+    color: rgb(171, 2, 2);
+    font-size: clamp(2rem, 4vw, 4rem);
+    font-family:serif;
+    display: block;
+    text-decoration: none;
+    padding: clamp(0.25rem, 0,5vw, 1rem) 0rem;
+    transition: all 400ms ease;
+    z-index: 2;
+}
+.menubar{
+  /*
+  margin-left: clamp(0.2rem, 20vw, 4rem);
+  */
+}
+
+/*maalataan kaikki kohdat läpinäkyväksi*/
+.menubar:hover > .menu-item {
+    opacity: 0.3;
+}
+/*ylläolevan override valitun kohdan osalta*/
+.menubar:hover > .menu-item:hover{
+    opacity: 1;
+}
+
+#background-logo{
+    height: 100vh;
+    width: 100vh;
+    background-image: url(img/logo.svg);
+    background-position: 0% 0%;
+    background-size: 12vmin;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    opacity: 5%;
+    z-index: -1;
+    transition: all 800ms ease;
+}
+.menubar:hover ~ #background-logo{
+    background-size: 11vmin;
+    opacity: 3%;
+}
+
+.menubar[data-active-index="0"] > #background-logo{
+    background-position: 0% -25%;
+}
+.menubar[data-active-index="1"] > #background-logo{
+    background-position: 0% -50%;
+}
+.menubar[data-active-index="2"] > #background-logo{
+    background-position: 0% -75%;
+}
