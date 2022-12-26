@@ -2,7 +2,7 @@
 
 const menu = document.getElementsByClassName("menubar");
 
-Array.from(document.getElementsByClassName("menu-item"))
+Array.from(document.getElementsByClassName("menuItem"))
     .forEach((item, index) => {
         item.onmouseover = () => {
             menu.dataset.activeIndex = index;
@@ -10,12 +10,14 @@ Array.from(document.getElementsByClassName("menu-item"))
         }
     });
 console.log(menu)
-console.log(document.getElementsByClassName("menu-item"))
+console.log(document.getElementsByClassName("menuItem"))
 */
 
 // Jonin ja Mikan vinkki:
-$(”.menu-item”).on(”hover”, function(){
+$("menuItem").on("hover", (function(){
+    $(this).append($("***"));
     //Kun hoveratan niin mitä sille tapahtuu, esim:
-    $(”.menu-item”).removeClass(“active”); //poistetaan kaikilta
-    $(this).addClass(”active”); //lisätään hoveratulle
-});
+    $("menuItem").removeClass("active"); //poistetaan kaikilta
+    $(this).addClass("active"); //lisätään hoveratulle
+    
+}));

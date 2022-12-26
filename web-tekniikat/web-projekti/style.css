@@ -11,7 +11,7 @@ body{
     display: flex;
     align-items: center;
 }
-.menu-item{
+.menuItem{
     color: rgb(171, 2, 2);
     font-size: clamp(2rem, 4vw, 4rem);
     font-family:serif;
@@ -28,11 +28,11 @@ body{
 }
 
 /*maalataan kaikki kohdat läpinäkyväksi*/
-.menubar:hover > .menu-item {
+.menubar:hover > .menuItem {
     opacity: 0.3;
 }
 /*ylläolevan override valitun kohdan osalta*/
-.menubar:hover > .menu-item:hover{
+.menubar:hover > .menuItem:hover{
     opacity: 1;
 }
 
@@ -62,4 +62,8 @@ body{
 }
 .menubar[data-active-index="2"] > #background-logo{
     background-position: 0% -75%;
+}
+.active{
+    size: 50vh;
+    color: blue;
 }
