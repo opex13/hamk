@@ -1,5 +1,5 @@
 // eka versio, raaka toimimaton js
-///*
+/*
 const menu = document.getElementsByClassName("menubar");
 
 Array.from(document.getElementsByClassName("menuItem"))
@@ -11,7 +11,7 @@ Array.from(document.getElementsByClassName("menuItem"))
     });
 console.log(menu)
 console.log(document.getElementsByClassName("menuItem"))
-//*/
+*/
 
 // Jonin ja Mikan vinkki:
 /*
@@ -30,8 +30,13 @@ $(".menuItem").mouseenter(function(){
     //}
 );
 */
+// no viihdoin toimii! class + index
+$(document).ready(function(){
 $(".menuItem").hover(function () {
-    $(this).addClass("active");
+    $(this).addClass("active");//.attr(index,"321");
+    var index = $(".menuItem").index(this);
+    $(".menubar").attr("index", index);
 }, function () {
     $(this).removeClass("active");
+});
 });
