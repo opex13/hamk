@@ -40,7 +40,7 @@ body{
     height: 100vh;
     width: 100vh;
     background-image: url(img/logo.svg);
-    background-position: 0% 0%;
+    background-position: 0% 10%;
     background-size: 12vmin;
     position: absolute;
     left: 0px;
@@ -54,16 +54,25 @@ body{
     opacity: 3%;
 }
 
-.menubar[data-active-index="0"] > #background-logo{
+.menubar[index="0"] + #background-logo{
     background-position: 0% -25%;
 }
-.menubar[data-active-index="1"] > #background-logo{
+.menubar[index="1"] + #background-logo{
     background-position: 0% -50%;
 }
-.menubar[data-active-index="2"] > #background-logo{
+.menubar[index="2"] + #background-logo{
     background-position: 0% -75%;
 }
-.active{
+.menubar[index="3"] + #background-logo{
+    background-position: 0% -100%;
+}
+.menubar[index="4"] + #background-logo{
+    background-position: 0% -125%;
+}
+.menubar[index="5"] + #background-logo{
+    background-position: 0% -150%;
+}
+/*.active{
     size: 50vh;
     color: blue;
-}
+}*/

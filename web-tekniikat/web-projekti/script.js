@@ -29,7 +29,7 @@ $(".menuItem").mouseenter(function(){
     //$(this).removeClass("active");
     //}
 );
-*/
+*/ 
 // no viihdoin toimii! class + index
 $(document).ready(function(){
 $(".menuItem").hover(function () {
