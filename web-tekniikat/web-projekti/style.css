@@ -4,6 +4,7 @@
 
 body{
     margin: 0px;
+    float: left;
 }
 
 .navbar{
@@ -76,3 +77,6 @@ body{
     size: 50vh;
     color: blue;
 }*/
+.card{
+    
+}
