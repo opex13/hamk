@@ -1,0 +1,121 @@
+{
+    "quizzes": [
+        {
+            "id": 1,
+            "title": "JavaScript Basics",
+            "description": "Test your knowledge of JavaScript fundamentals",
+            "questions": [
+                {
+                    "id": 1,
+                    "question": "What is the correct way to declare a variable in JavaScript?",
+                    "options": [
+                        "var x = 5;",
+                        "variable x = 5;",
+                        "x = 5;",
+                        "declare x = 5;"
+                    ],
+                    "correctAnswer": 0
+                },
+                {
+                    "id": 2,
+                    "question": "Which method is used to add an element to the end of an array?",
+                    "options": [
+                        "push()",
+                        "add()",
+                        "insert()",
+                        "append()"
+                    ],
+                    "correctAnswer": 0
+                },
+                {
+                    "id": 3,
+                    "question": "What does JSON stand for?",
+                    "options": [
+                        "JavaScript Object Notation",
+                        "Java String Object Notation",
+                        "JavaScript Official Network",
+                        "Java Syntax Object Notation"
+                    ],
+                    "correctAnswer": 0
+                },
+                {
+                    "id": 4,
+                    "question": "Which of the following is not a primitive data type in JavaScript?",
+                    "options": [
+                        "string",
+                        "number",
+                        "array",
+                        "boolean"
+                    ],
+                    "correctAnswer": 2
+                },
+                {
+                    "id": 5,
+                    "question": "How do you create a function in JavaScript?",
+                    "options": [
+                        "function myFunc() {}",
+                        "def myFunc() {}",
+                        "func myFunc() {}",
+                        "function: myFunc() {}"
+                    ],
+                    "correctAnswer": 0
+                },
+                {
+                    "id": 6,
+                    "question": "What is the output of typeof undefined?",
+                    "options": [
+                        "undefined",
+                        "null",
+                        "object",
+                        "unknown"
+                    ],
+                    "correctAnswer": 0
+                },
+                {
+                    "id": 7,
+                    "question": "Which method removes the last element from an array?",
+                    "options": [
+                        "pop()",
+                        "remove()",
+                        "shift()",
+                        "splice()"
+                    ],
+                    "correctAnswer": 0
+                },
+                {
+                    "id": 8,
+                    "question": "What does the === operator do in JavaScript?",
+                    "options": [
+                        "Checks equality without type conversion",
+                        "Assigns a value",
+                        "Checks equality with type conversion",
+                        "Multiplies values"
+                    ],
+                    "correctAnswer": 0
+                },
+                {
+                    "id": 9,
+                    "question": "How do you convert a string to a number in JavaScript?",
+                    "options": [
+                        "parseInt() or parseFloat()",
+                        "toNumber()",
+                        "Number.convert()",
+                        "convertToNum()"
+                    ],
+                    "correctAnswer": 0
+                },
+                {
+                    "id": 10,
+                    "question": "Which keyword is used to create a class in JavaScript?",
+                    "options": [
+                        "class",
+                        "Class",
+                        "def",
+                        "struct"
+                    ],
+                    "correctAnswer": 0
+                }
+            ]
+        }
+    ]
+}
